@@ -11,13 +11,7 @@ from .serializers import UserSerializer
 class UserViewSet(viewsets.ModelViewSet):
     """This endpoint allows for viewing users"""
     # parser_classes = (MultiPartParser)
-    
 
-    permission_classes = (IsAuthenticated, )
+    permission_classes = (IsAuthenticated,)
     serializer_class = UserSerializer
     queryset = get_user_model().objects.all().order_by('date_joined')
-    
-    
-
-
-
