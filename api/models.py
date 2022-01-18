@@ -5,11 +5,11 @@ from django.utils.translation import gettext_lazy as _
 
 # Create your models here.
 
-def upload_location(instance, filename, **kwargs):
-    file_path = 'login/{username}/-{filename}'.format(
-        username=str(instance.username), filename=filename
-    )
-    return file_path
+# def upload_location(instance, filename, **kwargs):
+#     file_path = 'login/{username}/-{filename}'.format(
+#         username=str(instance.username), filename=filename
+#     )
+#     return file_path
 
 
 class User(AbstractUser):
