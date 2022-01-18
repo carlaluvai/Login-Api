@@ -6,6 +6,6 @@ from .models import User
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = get_user_model()
-        fields = ['image', "id", "last_login", "is_superuser", "username", "first_name", "last_name",
-                  "email", "is_staff", "is_active", "date_joined", "user_permissions", 'location', 'image']
+        fields = ["id", "last_login", "is_superuser", "username", "first_name", "last_name",
+                  "email", "is_staff", "is_active", "date_joined", "user_permissions", 'location']
         # lookup_field = 'username'
