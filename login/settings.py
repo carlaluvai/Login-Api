@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     'coreapi',
     'api',
     'rest_auth',
-    'rest_framework_jwt',
+    # 'rest_framework_jwt',
     # 'rest_framework_jwt.blacklist'
 ]
 AUTH_USER_MODEL = 'api.User'
